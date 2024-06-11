@@ -43,4 +43,4 @@ def generate_titles(input_text, num_titles, temperature):
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001, threaded=True, host=('0.0.0.0'))
